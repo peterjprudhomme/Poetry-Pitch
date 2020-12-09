@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#"> About </a>
+            </div>
+            <h2><a class="article-title">Welcome to Poetry Pitch!</a></h2>
+            <h5><a class="article-title">A poem recommender by Peter Prudhomme</a></h5>
+            <p class="article-content">
+            Poetry Pitch is a website created to help those who, like myself, are constantly on the lookout for 
+            new poets and poems to study and appreciate. Rather than reading through a poetry collection 
+            put together by someone else, this interactive site is designed to take in user feedback to make 
+            custom recommendations based on the poems YOU like with the goal of providing you with a 
+            variety of poems you are predicted to enjoy!
+            
+            <h5>How to use this site:</h5>
+            First, you must create an account with a username and password and log in. <br>
+            Next, navigate to the Poem Recommendation page. Here you will see one poem along with three 
+            clickable links: <i>Like the poem, recommend a different poem, and generate a random poem</i>.
+            In order to make sure the recommender has a variety of information about the poems you like, you must 
+            <b>first add 10 poems to your liked poem list before the recommender starts to factor any in</b>. 
+            This is to ensure your first few poems don't skew all subsequent recommendations. Before you 
+            reach 10 liked poems, all poems recommended will be randomly chosen from the database.
+            <br><br>
+            From there simply sit back, crack your fingers, and read some poetry!
+            </p>
+          </div>
+        </article>
+<!--    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+-->
+
+{% endblock content %}

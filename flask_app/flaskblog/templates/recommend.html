@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#"> Recommended Poem ID: {{ poem.name }}</a>
+            </div>
+            <h2><a class="article-title" href="#">{{ poem.Title }}</a></h2>
+            <h5><a class="article-title" href="#">By {{ poem.Poet }}</a></h5>
+            <p class="article-content">{{ poem.Poem }}</p>
+          </div>
+        </article>
+    </div>
+    {% if number_of_liked_poems < 10 %}
+        <div class="col-md-4">
+          <div class="content-section">
+              <a class="mr-2"><center> Like {{ 10 - number_of_liked_poems }} more poems to start getting recommendations!</center></a>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item" ><a href="{{ url_for('like') }}">Add <b>{{ poem.Title }}</b> to liked poems</a></li>
+                <li class="list-group-item list-group-item"><a href="{{ url_for('random') }}">Random poem</a></li>
+            </p>
+          </div>
+        </div>
+    {% else %}
+        <div class="col-md-4">
+          <div class="content-section">
+              <a class="mr-2"><center> Click an option below to see another poem!</center></a>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item" ><a href="{{ url_for('like') }}">Add <b>{{ poem.Title }}</b> to liked poems</a></li>
+                <li class="list-group-item list-group-item"><a href="{{ url_for('skip') }}">Recommend another one</a></li>
+                <li class="list-group-item list-group-item"><a href="{{ url_for('random') }}">Random poem</a></li>
+            </p>
+          </div>
+        </div>
+    {% endif %}
+{% endblock content %}
