@@ -1,5 +1,9 @@
 # Poetry Pitch
 
+Check out this app yourself at [poetry-pitch.herokuapp.com](poetry-pitch.herokuapp.com)!
+
+You can also see a video on how it works [here](https://www.youtube.com/watch?v=7IAGDbT4TyA&feature=youtu.be).
+
 Poetry Pitch is a content based recommendation system for poetry built around a flask application. It was created to help those who, like myself, are constantly on the lookout for new poets and poems to study and appreciate. Rather than reading through a poetry collection put together by someone else, this interactive site is designed to take in user feedback to make custom recommendations based on the poems YOU like with the goal of providing you with a variety of poems you are predicted to enjoy! All poems were web-scraped from the [Poetry Foundation website](https://www.poetryfoundation.org/).
 
 ## Navigating the files
