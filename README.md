@@ -1,6 +1,6 @@
 # Poetry Pitch
 
-Check out this app yourself at [poetry-pitch.herokuapp.com](poetry-pitch.herokuapp.com)!
+Check out this app yourself at [poetry-pitch.herokuapp.com](http://poetry-pitch.herokuapp.com)!
 
 You can also see a video on how it works [here](https://www.youtube.com/watch?v=7IAGDbT4TyA&feature=youtu.be).
 
